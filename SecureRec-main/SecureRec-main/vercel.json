@@ -23,8 +23,5 @@
       "src": "/(.*)",
       "dest": "/index.html"
     }
-  ],
-  "resolved": {
-    "node": "18"
-  }
+  ]
 }
