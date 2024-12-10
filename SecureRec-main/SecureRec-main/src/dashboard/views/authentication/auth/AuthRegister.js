@@ -338,7 +338,7 @@ const AuthRegister = ({ title, subtitle, subtext }) => {
             }
         }
         try {
-            const response = await axios.post('https://secure-rec-backend.vercel.app/users/register', formData);
+            const response = await axios.post('http://localhost:3000/users/register', formData);
             console.log(response.data); // Log response data
             // Reset form data and error message on successful submission
             setFormData({

@@ -54,7 +54,7 @@ export default function Contact() {
     }
 
     try {
-      const response = await axios.post("https://secure-rec-backend.vercel.app/api/submit", formData);
+      const response = await axios.post("http://localhost:3000/api/submit", formData);
       console.log(response.data.message);
       // Reset form data and error message on successful submission
       setFormData({

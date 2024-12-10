@@ -79,7 +79,7 @@ useEffect(() => {
 
     const fetchUserData = async () => {
       try {
-        const response = await fetch(`https://secure-rec-backend.vercel.app/users/users/${userId}`, {
+        const response = await fetch(`http://localhost:3000/users/users/${userId}`, {
           headers: {
             'x-access-token': token, // or 'Authorization': `Bearer ${token}`
           },

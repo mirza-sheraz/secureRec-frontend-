@@ -320,7 +320,7 @@ const AuthLogin = ({ title, subtitle, subtext }) => {
 
     const handleLogin = async () => {
         try {
-            const response = await axios.post('https://secure-rec-backend.vercel.app/users/login', { email, password });
+            const response = await axios.post('http://localhost:3000/users/login', { email, password });
             
             const token = response.data.token;
             localStorage.setItem('token', token); // Store token in local storage
