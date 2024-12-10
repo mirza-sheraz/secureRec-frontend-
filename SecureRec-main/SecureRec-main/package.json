@@ -89,8 +89,5 @@
     "eslint-plugin-react-hooks": "^4.2.0",
     "prettier": "^2.3.1",
     "sass": "^1.76.0"
-  },
-  "engines": {
-  "npm": "8.19.2"
-}
+  }
 }
