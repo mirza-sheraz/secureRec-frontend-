@@ -1,0 +1,28 @@
+{
+    "builds": [
+      {
+        "src": "package.json",
+        "use": "@vercel/static-build",
+        "config": {
+          "distDir": "build"
+        }
+      }
+    ],
+    "rewrites": [
+      {
+        "source": "/api/(.*)",
+        "destination": "https://secure-rec-backend.vercel.app/api/$1"
+      },
+      {
+        "source": "/users/(.*)",
+        "destination": "https://secure-rec-backend.vercel.app/users/$1"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/index.html"
+      }
+    ]
+  }
+  
