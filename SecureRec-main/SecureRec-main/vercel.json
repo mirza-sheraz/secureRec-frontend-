@@ -6,7 +6,7 @@
       "use": "@vercel/static-build",
       "config": {
         "distDir": "build",
-        "installCommand": "NODE_OPTIONS=--legacy-peer-deps npm install --force"
+        "installCommand": "NPM_CONFIG_LEGACY_PEER_DEPS=true npm install --force"
       }
     }
   ],
